@@ -1,10 +1,10 @@
 import { View, Text, StyleSheet, Button } from 'react-native'
 
-const ChatListScreen = ({ navigate }) => {
+const ChatListScreen = (props) => {
     return (
         <View style={styles.chatScreenView}>
             <Text>Chat List Screen</Text>
-            <Button title={'Chat Settings'} onPress={() => { navigate('ChatSettings') }} />
+            <Button title={'Chat Settings'} onPress={() => { props.navigate('ChatSettings') }} />
         </View>
     )
 }
