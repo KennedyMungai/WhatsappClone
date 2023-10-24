@@ -24,7 +24,7 @@ export default function App() {
 	}, [appIsLoaded])
 
 	return (
-		<SafeAreaProvider style={styles.container}>
+		<SafeAreaProvider style={styles.container} onLayout={onLayout}>
 			<SafeAreaView>
 				<Text>Something in the way</Text>
 				<StatusBar style='auto' />
