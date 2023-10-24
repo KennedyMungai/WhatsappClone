@@ -3,7 +3,7 @@ import * as SplashScreen from 'expo-splash-screen'
 import { StatusBar } from 'expo-status-bar'
 import { useCallback, useEffect, useState } from 'react'
 import { StyleSheet, Text } from 'react-native'
-import 'react-native-gesture-handler'
+// import 'react-native-gesture-handler'
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context'
 
 SplashScreen.preventAutoHideAsync()
