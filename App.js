@@ -1,13 +1,23 @@
+import * as SplashScreen from 'expo-splash-screen'
 import { StatusBar } from 'expo-status-bar'
+import { useEffect, useState } from 'react'
 import { StyleSheet, Text } from 'react-native'
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context'
-import * as SplashScreen from 'expo-splash-screen'
-import { useState } from 'react'
 
 SplashScreen.preventAutoHideAsync()
 
 export default function App() {
 	const [appIsLoaded, setAppIsLoaded] = useState(false)
+
+	useEffect(() => {
+		const timer = setTimeout(() => {
+			setAppIsLoaded(true)
+		}, 2000)
+
+		return () => {
+			clearTimeout(timer)
+		}
+	}, [])
 
 	return (
 		<SafeAreaProvider style={styles.container}>
