@@ -1,12 +1,17 @@
+import { NavigationContainer } from '@react-navigation/native'
+import { createStackNavigator } from '@react-navigation/stack'
 import * as Font from 'expo-font'
 import * as SplashScreen from 'expo-splash-screen'
 import { StatusBar } from 'expo-status-bar'
 import { useCallback, useEffect, useState } from 'react'
-import { StyleSheet, Text } from 'react-native'
-// import 'react-native-gesture-handler'
+import { StyleSheet } from 'react-native'
+import 'react-native-gesture-handler'
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context'
+import HomeScreen from './screens/HomeScreen'
 
 SplashScreen.preventAutoHideAsync()
+
+const Stack = createStackNavigator()
 
 export default function App() {
 	const [appIsLoaded, setAppIsLoaded] = useState(false)
@@ -47,9 +52,17 @@ export default function App() {
 	return (
 		<SafeAreaProvider style={styles.container} onLayout={onLayout}>
 			<SafeAreaView>
-				<Text style={styles.mainPageTestText}>Something in the way</Text>
-				<StatusBar style='auto' />
+				<NavigationContainer>
+					<Stack.Navigator>
+						<Stack.Screen
+							name="Home"
+							component={HomeScreen}
+							options={{ headerShown: false }}
+						/>
+					</Stack.Navigator>
+				</NavigationContainer>
 			</SafeAreaView>
+			<StatusBar style='auto' />
 		</SafeAreaProvider>
 	)
 }
