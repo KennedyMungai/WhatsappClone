@@ -6,13 +6,17 @@ export default function App() {
 	return (
 		<SafeAreaProvider style={styles.container}>
 			<SafeAreaView>
-				<Text>Open up App.js to start working on your app!</Text>
-				<StatusBar style='auto' />
+				<Button
+					title='Click Me'
+					onPress={() => console.log('Button Clicked')}
+				/>
 
 				<Button
 					title='Click Me'
 					onPress={() => console.log('Button Clicked')}
 				/>
+
+				<StatusBar style='auto' />
 			</SafeAreaView>
 		</SafeAreaProvider>
 	)
