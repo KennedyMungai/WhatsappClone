@@ -7,7 +7,7 @@ import { useCallback, useEffect, useState } from 'react'
 import { StyleSheet } from 'react-native'
 import 'react-native-gesture-handler'
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context'
-import HomeScreen from './screens/HomeScreen'
+import ChatListScreen from './screens/ChatListScreen'
 
 SplashScreen.preventAutoHideAsync()
 
@@ -56,7 +56,7 @@ export default function App() {
 					<Stack.Navigator>
 						<Stack.Screen
 							name="Home"
-							component={HomeScreen}
+							component={ChatListScreen}
 							options={{ headerShown: false }}
 						/>
 					</Stack.Navigator>

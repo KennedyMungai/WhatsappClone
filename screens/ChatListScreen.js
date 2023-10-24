@@ -1,6 +1,6 @@
 import { View } from 'react-native'
 
-const HomeScreen = () => {
+const ChatListScreen = () => {
     return (
         <View>
 
@@ -8,4 +8,4 @@ const HomeScreen = () => {
     )
 }
 
-export default HomeScreen
+export default ChatListScreen
