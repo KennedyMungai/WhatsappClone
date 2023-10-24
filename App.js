@@ -9,10 +9,12 @@ import 'react-native-gesture-handler'
 import { SafeAreaProvider } from 'react-native-safe-area-context'
 import ChatListScreen from './screens/ChatListScreen'
 import ChatSettingsScreen from './screens/ChatSettingsScreen'
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 
 SplashScreen.preventAutoHideAsync()
 
 const Stack = createStackNavigator()
+const Tab = createBottomTabNavigator()
 
 export default function App() {
 	const [appIsLoaded, setAppIsLoaded] = useState(false)
