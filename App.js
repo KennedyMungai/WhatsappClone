@@ -68,7 +68,7 @@ export default function App() {
 				<Stack.Navigator>
 					<Stack.Screen
 						name="Home"
-						component={ChatListScreen}
+						component={TabNavigator}
 						options={{ headerShown: true }}
 					/>
 					<Stack.Screen
