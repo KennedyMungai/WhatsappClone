@@ -7,11 +7,11 @@ export default function App() {
 	const [counter, setCounter] = useState(0)
 
 	const addCounter = () => {
-		setCounter((number) => number++)
+		setCounter(counter + 1)
 	}
 
 	const removeCounter = () => {
-		setCounter((number) => number--)
+		setCounter(counter - 1)
 	}
 
 	return (
