@@ -66,6 +66,6 @@ const styles = StyleSheet.create({
 	mainPageTestText: {
 		fontSize: 20,
 		fontWeight: 'bold',
-		fontFamily: 'black'
+		fontFamily: 'medium'
 	}
 })
