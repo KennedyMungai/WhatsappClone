@@ -3,7 +3,7 @@ import { View, Text, StyleSheet } from 'react-native'
 const ChatSettingsScreen = () => {
     return (
         <View style={styles.chatScreenView}>
-            <Text>Something in the way</Text>
+            <Text>Chat Settings Screen</Text>
         </View>
     )
 }
