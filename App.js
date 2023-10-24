@@ -7,11 +7,15 @@ export default function App() {
 	const [counter, setCounter] = useState(0)
 
 	const addCounter = () => {
-		setCounter(counter + 1)
+		setCounter((number) => {
+			return number + 1
+		})
 	}
 
 	const removeCounter = () => {
-		setCounter(counter - 1)
+		setCounter((number) => {
+			return number - 1
+		})
 	}
 
 	return (
