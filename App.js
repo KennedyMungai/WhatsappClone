@@ -14,7 +14,17 @@ export default function App() {
 		const loadFonts = async () => {
 			try {
 				await Font.loadAsync({
-					"black": require('./assets/fonts/Roboto-Black.ttf')
+					"black": require('./assets/fonts/Roboto-Black.ttf'),
+					"black-italic": require('./assets/fonts/Roboto-BlackItalic.ttf'),
+					"bold": require('./assets/fonts/Roboto-Bold.ttf'),
+					"bold-italic": require('./assets/fonts/Roboto-BoldItalic.ttf'),
+					"italic": require('./assets/fonts/Roboto-Italic.ttf'),
+					"light": require('./assets/fonts/Roboto-Light.ttf'),
+					"light-italic": require('./assets/fonts/Roboto-LightItalic.ttf'),
+					"medium": require('./assets/fonts/Roboto-Medium.ttf'),
+					"medium-italic": require('./assets/fonts/Roboto-MediumItalic.ttf'),
+					"thin": require('./assets/fonts/Roboto-Thin.ttf'),
+					"thin-italic": require('./assets/fonts/Roboto-ThinItalic.ttf')
 				})
 			} catch (error) {
 				console.error(error.message)
