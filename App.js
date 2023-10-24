@@ -16,6 +16,15 @@ SplashScreen.preventAutoHideAsync()
 const Stack = createStackNavigator()
 const Tab = createBottomTabNavigator()
 
+const TabNavigator = () => {
+	return (
+		<Tab.Navigator>
+			<Tab.Screen name="Home" component={ChatListScreen} />
+			<Tab.Screen name="Settings" component={ChatSettingsScreen} />
+		</Tab.Navigator>
+	)
+}
+
 export default function App() {
 	const [appIsLoaded, setAppIsLoaded] = useState(false)
 
