@@ -1,21 +1,27 @@
 import { StatusBar } from 'expo-status-bar'
-import { Button, StyleSheet, Text } from 'react-native'
+import { Button, StyleSheet, View, Text } from 'react-native'
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context'
+import { useState } from 'react'
 
 export default function App() {
+	const [counter, setCounter] = useState(0)
+
+	const addCounter = () => {
+		setCounter((number) => number++)
+	}
+
+	const removeCounter = () => {
+		setCounter((number) => number--)
+	}
+
 	return (
 		<SafeAreaProvider style={styles.container}>
 			<SafeAreaView>
-				<Button
-					title='Click Me'
-					onPress={() => console.log('Button Clicked')}
-				/>
-
-				<Button
-					title='Click Me'
-					onPress={() => console.log('Button Clicked')}
-				/>
-
+				<View style={styles.counterButtonsView}>
+					<Button title='Add' onPress={addCounter} />
+					<Text>{counter}</Text>
+					<Button title='Subtract' onPress={removeCounter} />
+				</View>
 				<StatusBar style='auto' />
 			</SafeAreaView>
 		</SafeAreaProvider>
@@ -28,5 +34,9 @@ const styles = StyleSheet.create({
 		backgroundColor: '#fff',
 		alignItems: 'center',
 		justifyContent: 'center'
+	},
+	counterButtonsView: {
+		flexDirection: 'row',
+		gap: 10
 	}
 })
