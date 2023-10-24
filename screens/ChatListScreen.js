@@ -14,7 +14,6 @@ const styles = StyleSheet.create({
     chatScreenView: {
         flex: 1,
         alignItems: 'center',
-        justifyContent: 'center',
-        color: 'black'
+        justifyContent: 'center'
     }
 })
