@@ -1,3 +1,4 @@
+import { Ionicons } from '@expo/vector-icons'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
@@ -10,7 +11,6 @@ import 'react-native-gesture-handler'
 import { SafeAreaProvider } from 'react-native-safe-area-context'
 import ChatListScreen from './screens/ChatListScreen'
 import ChatSettingsScreen from './screens/ChatSettingsScreen'
-import { Ionicons } from '@expo/vector-icons';
 
 SplashScreen.preventAutoHideAsync()
 
