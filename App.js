@@ -35,7 +35,7 @@ export default function App() {
 	return (
 		<SafeAreaProvider style={styles.container} onLayout={onLayout}>
 			<SafeAreaView>
-				<Text>Something in the way</Text>
+				<Text style={styles.mainPageTestText}>Something in the way</Text>
 				<StatusBar style='auto' />
 			</SafeAreaView>
 		</SafeAreaProvider>
@@ -52,5 +52,10 @@ const styles = StyleSheet.create({
 	counterButtonsView: {
 		flexDirection: 'row',
 		gap: 10
+	},
+	mainPageTestText: {
+		fontSize: 20,
+		fontWeight: 'bold',
+		fontFamily: 'black'
 	}
 })
