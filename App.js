@@ -23,6 +23,7 @@ export default function App() {
 					"light-italic": require('./assets/fonts/Roboto-LightItalic.ttf'),
 					"medium": require('./assets/fonts/Roboto-Medium.ttf'),
 					"medium-italic": require('./assets/fonts/Roboto-MediumItalic.ttf'),
+					"regular": require('./assets/fonts/Roboto-Regular.ttf'),
 					"thin": require('./assets/fonts/Roboto-Thin.ttf'),
 					"thin-italic": require('./assets/fonts/Roboto-ThinItalic.ttf')
 				})
@@ -66,6 +67,6 @@ const styles = StyleSheet.create({
 	mainPageTestText: {
 		fontSize: 20,
 		fontWeight: 'bold',
-		fontFamily: 'medium'
+		fontFamily: 'regular'
 	}
 })
