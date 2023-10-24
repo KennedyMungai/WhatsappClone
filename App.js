@@ -23,6 +23,8 @@ export default function App() {
 		await SplashScreen.hideAsync()
 	}, [appIsLoaded])
 
+	if (!appIsLoaded) return null
+
 	return (
 		<SafeAreaProvider style={styles.container} onLayout={onLayout}>
 			<SafeAreaView>
