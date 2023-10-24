@@ -61,7 +61,7 @@ export default function App() {
 						options={{ headerShown: false }}
 					/>
 					<Stack.Screen
-						name="Settings"
+						name="ChatSettings"
 						component={ChatSettingsScreen}
 						options={{ headerShown: false }}
 					/>
