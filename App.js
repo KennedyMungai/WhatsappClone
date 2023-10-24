@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar'
-import { Button, StyleSheet, View, Text } from 'react-native'
-import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context'
 import { useState } from 'react'
+import { Button, StyleSheet, Text, View } from 'react-native'
+import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context'
 
 export default function App() {
 	const [counter, setCounter] = useState(0)
