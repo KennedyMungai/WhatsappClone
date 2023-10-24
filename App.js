@@ -10,6 +10,7 @@ import 'react-native-gesture-handler'
 import { SafeAreaProvider } from 'react-native-safe-area-context'
 import ChatListScreen from './screens/ChatListScreen'
 import ChatSettingsScreen from './screens/ChatSettingsScreen'
+import { Ionicons } from '@expo/vector-icons';
 
 SplashScreen.preventAutoHideAsync()
 
@@ -19,7 +20,7 @@ const Tab = createBottomTabNavigator()
 const TabNavigator = () => {
 	return (
 		<Tab.Navigator>
-			<Tab.Screen name="Chat" component={ChatListScreen} />
+			<Tab.Screen name="Chat" component={ChatListScreen} options={{ title: '' }} />
 			<Tab.Screen name="Settings" component={ChatSettingsScreen} />
 		</Tab.Navigator>
 	)
@@ -69,14 +70,14 @@ export default function App() {
 					<Stack.Screen
 						name="Home"
 						component={TabNavigator}
-						options={{ headerShown: true }}
+						options={{ headerShown: false }}
 					/>
 					<Stack.Screen
 						name="ChatSettings"
 						component={ChatSettingsScreen}
 						options={
 							{
-								headerShown: true,
+								headerShown: false,
 								headerTitle: 'Settings'
 							}
 						}
