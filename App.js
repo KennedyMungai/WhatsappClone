@@ -1,3 +1,4 @@
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
 import * as Font from 'expo-font'
@@ -9,7 +10,6 @@ import 'react-native-gesture-handler'
 import { SafeAreaProvider } from 'react-native-safe-area-context'
 import ChatListScreen from './screens/ChatListScreen'
 import ChatSettingsScreen from './screens/ChatSettingsScreen'
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 
 SplashScreen.preventAutoHideAsync()
 
