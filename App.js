@@ -6,7 +6,7 @@ import { StatusBar } from 'expo-status-bar'
 import { useCallback, useEffect, useState } from 'react'
 import { StyleSheet } from 'react-native'
 import 'react-native-gesture-handler'
-import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context'
+import { SafeAreaProvider } from 'react-native-safe-area-context'
 import ChatListScreen from './screens/ChatListScreen'
 import ChatSettingsScreen from './screens/ChatSettingsScreen'
 
