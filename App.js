@@ -51,17 +51,17 @@ export default function App() {
 
 	return (
 		<SafeAreaProvider style={styles.container} onLayout={onLayout}>
-			<SafeAreaView>
-				<NavigationContainer>
-					<Stack.Navigator>
-						<Stack.Screen
-							name="Home"
-							component={ChatListScreen}
-							options={{ headerShown: false }}
-						/>
-					</Stack.Navigator>
-				</NavigationContainer>
-			</SafeAreaView>
+			{/* <SafeAreaView> */}
+			<NavigationContainer>
+				<Stack.Navigator>
+					<Stack.Screen
+						name="Home"
+						component={ChatListScreen}
+						options={{ headerShown: false }}
+					/>
+				</Stack.Navigator>
+			</NavigationContainer>
+			{/* </SafeAreaView> */}
 			<StatusBar style='auto' />
 		</SafeAreaProvider>
 	)
