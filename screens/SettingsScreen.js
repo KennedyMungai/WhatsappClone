@@ -1,6 +1,6 @@
 import { View, Text, StyleSheet } from 'react-native'
 
-const Settings = () => {
+const SettingsScreen = () => {
     return (
         <View style={styles.chatScreenView}>
             <Text>Chat Settings Screen</Text>
@@ -8,7 +8,7 @@ const Settings = () => {
     )
 }
 
-export default Settings
+export default SettingsScreen
 
 const styles = StyleSheet.create({
     chatScreenView: {
