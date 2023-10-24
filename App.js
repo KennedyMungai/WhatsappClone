@@ -11,13 +11,19 @@ export default function App() {
 	const [appIsLoaded, setAppIsLoaded] = useState(false)
 
 	useEffect(() => {
-		const timer = setTimeout(() => {
-			setAppIsLoaded(true)
-		}, 2000)
-
-		return () => {
-			clearTimeout(timer)
+		const loadFonts = async () => {
+			try {
+				await Font.loadAsync({
+					"black": require('./assets/fonts/Roboto-Black.ttf')
+				})
+			} catch (error) {
+				console.error(error.message)
+			} finally {
+				setAppIsLoaded(true)
+			}
 		}
+
+		loadFonts()
 	}, [])
 
 	const onLayout = useCallback(async () => {
