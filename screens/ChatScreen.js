@@ -1,5 +1,6 @@
-import { Button, ImageBackground, StyleSheet, TextInput, View } from 'react-native'
+import { Button, ImageBackground, StyleSheet, TextInput, TouchableOpacity, View } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
+import { FontAwesome, FontAwesome5 } from '@expo/vector-icons';
 
 const ChatScreen = ({ navigation }) => {
     return (
@@ -10,9 +11,13 @@ const ChatScreen = ({ navigation }) => {
             <SafeAreaView style={styles.chatView}>
                 <View style={styles.chatAreaView}></View>
                 <View style={styles.inputContainer}>
-                    <Button title='Image' />
+                    <TouchableOpacity onPress={() => console.log("Something in the way")}>
+                        <FontAwesome5 name="image" size={24} color="black" />
+                    </TouchableOpacity>
                     <TextInput />
-                    <Button title='Camera' />
+                    <TouchableOpacity onPress={() => console.log("Something in the way")}>
+                        <FontAwesome name="camera" size={24} color="black" />
+                    </TouchableOpacity>
                 </View>
             </SafeAreaView>
         </ImageBackground>
@@ -34,10 +39,11 @@ const styles = StyleSheet.create({
     inputContainer: {
         flexDirection: 'row',
         justifyContent: 'space-between',
-        paddingVertical: 5,
-        paddingHorizontal: 10,
+        paddingVertical: 10,
+        paddingHorizontal: 20,
         margin: 10,
-        backgroundColor: 'white'
+        backgroundColor: 'white',
+        borderRadius: 10
     },
     chatAreaView: {
         flex: 1
