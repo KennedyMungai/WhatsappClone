@@ -12,11 +12,11 @@ const ChatScreen = ({ navigation }) => {
             <SafeAreaView style={styles.chatView}>
                 <View style={styles.chatAreaView}></View>
                 <View style={styles.inputContainer}>
-                    <TouchableOpacity onPress={() => console.log("Something in the way")}>
+                    <TouchableOpacity onPress={() => console.log("Images")}>
                         <FontAwesome5 name="image" size={24} color={colors.blue} />
                     </TouchableOpacity>
                     <TextInput />
-                    <TouchableOpacity onPress={() => console.log("Something in the way")}>
+                    <TouchableOpacity onPress={() => console.log("Camera")}>
                         <FontAwesome name="camera" size={24} color={colors.blue} />
                     </TouchableOpacity>
                 </View>
