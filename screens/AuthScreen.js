@@ -1,10 +1,11 @@
 import { View, Text, StyleSheet } from 'react-native'
+import { SafeAreaView } from 'react-native-safe-area-context'
 
 const AuthScreen = () => {
     return (
-        <View style={styles.chatScreenView}>
+        <SafeAreaView style={styles.chatScreenView}>
             <Text>Auth Screen</Text>
-        </View>
+        </SafeAreaView>
     )
 }
 
@@ -12,9 +13,7 @@ export default AuthScreen
 
 const styles = StyleSheet.create({
     chatScreenView: {
-        flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center'
+
     }
 })
 
