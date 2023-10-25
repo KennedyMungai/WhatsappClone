@@ -9,7 +9,13 @@ const ChatScreen = ({ navigation }) => {
 
     const sendMessageHandler = useCallback(
         () => {
-            setChatText("")
+            if (chatText.length !== 0) {
+                setChatText("")
+                console.log(chatText)
+            }
+            else {
+                return
+            }
         }, [chatText]
     )
 
@@ -47,11 +53,7 @@ const ChatScreen = ({ navigation }) => {
                             onChangeText={(text) => setChatText(text)}
                         />
                     </View>
-                    <TouchableOpacity
-                        onPress={
-                            () => console.log("Camera")
-                        }
-                    >
+                    <TouchableOpacity onPress={sendMessageHandler}>
                         <FontAwesome
                             name={`${chatText.length !== 0 ? "send" : "camera"}`}
                             size={24}
