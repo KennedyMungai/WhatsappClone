@@ -28,7 +28,6 @@ const MainNavigator = () => {
                 component={ChatScreen}
                 options={
                     {
-                        headerShown: false,
                         headerTitle: 'Chat'
                     }
                 }
