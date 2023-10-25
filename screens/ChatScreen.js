@@ -1,5 +1,6 @@
-import { View, TextInput, StyleSheet, Button, SafeAreaView } from 'react-native'
+import { View, TextInput, StyleSheet, Button } from 'react-native'
 import { ImageBackground } from 'react-native'
+import { SafeAreaView } from 'react-native-safe-area-context'
 
 const ChatScreen = ({ navigation }) => {
     return (
