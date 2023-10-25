@@ -51,6 +51,7 @@ const ChatScreen = ({ navigation }) => {
                             scrollEnabled
                             value={chatText}
                             onChangeText={(text) => setChatText(text)}
+                            onSubmitEditing={sendMessageHandler}
                         />
                     </View>
                     <TouchableOpacity onPress={sendMessageHandler}>
