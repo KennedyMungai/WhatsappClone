@@ -1,29 +1,9 @@
 import { NavigationContainer } from '@react-navigation/native'
-import { createStackNavigator } from '@react-navigation/stack'
-import ChatSettingsScreen from '../screens/ChatSettingsScreen'
-import TabNavigator from './TabNavigator'
-
-const Stack = createStackNavigator()
+import MainNavigator from './MainNavigator'
 
 const AppNavigator = () => {
     return (<NavigationContainer>
-        <Stack.Navigator>
-            <Stack.Screen
-                name="Home"
-                component={TabNavigator}
-                options={{ headerShown: false }}
-            />
-            <Stack.Screen
-                name="ChatSettings"
-                component={ChatSettingsScreen}
-                options={
-                    {
-                        headerShown: false,
-                        headerTitle: 'Settings'
-                    }
-                }
-            />
-        </Stack.Navigator>
+        <MainNavigator />
     </NavigationContainer>)
 }
 
