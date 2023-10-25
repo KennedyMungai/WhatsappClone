@@ -1,10 +1,11 @@
 import { StyleSheet, Text } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
+import Input from '../components/Input'
 
 const AuthScreen = () => {
     return (
         <SafeAreaView style={styles.chatScreenView}>
-            <Text>Auth Screen</Text>
+            <Input label={"Something"} />
         </SafeAreaView>
     )
 }
