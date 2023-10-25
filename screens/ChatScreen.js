@@ -1,9 +1,9 @@
-import { View, TextInput, StyleSheet, Button } from 'react-native'
+import { View, TextInput, StyleSheet, Button, SafeAreaView } from 'react-native'
 import { ImageBackground } from 'react-native'
 
 const ChatScreen = ({ navigation }) => {
     return (
-        <View style={styles.chatView}>
+        <SafeAreaView style={styles.chatView}>
             <ImageBackground
                 source={require('../assets/images/chat_background.jpeg')}
                 style={styles.imageBackgroundStyle}
@@ -14,7 +14,7 @@ const ChatScreen = ({ navigation }) => {
                 <TextInput />
                 <Button title='Camera' />
             </View>
-        </View>
+        </SafeAreaView>
     )
 }
 
