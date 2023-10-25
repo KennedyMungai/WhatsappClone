@@ -2,10 +2,16 @@ import { FontAwesome, FontAwesome5 } from '@expo/vector-icons';
 import { ImageBackground, StyleSheet, TextInput, TouchableOpacity, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import colors from '../constants/colors';
-import { useState } from 'react';
+import { useCallback, useState } from 'react';
 
 const ChatScreen = ({ navigation }) => {
     const [chatText, setChatText] = useState('')
+
+    const sendMessageHandler = useCallback(
+        () => {
+            setChatText("")
+        }, [chatText]
+    )
 
     return (
         <ImageBackground
