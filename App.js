@@ -6,6 +6,7 @@ import { StyleSheet } from 'react-native'
 import 'react-native-gesture-handler'
 import { SafeAreaProvider } from 'react-native-safe-area-context'
 import AppNavigator from './navigation/AppNavigator'
+import ChatSettingsScreen from './screens/ChatSettingsScreen'
 
 SplashScreen.preventAutoHideAsync()
 
@@ -45,9 +46,11 @@ export default function App() {
 
 	if (!appIsLoaded) return null
 
+	const isAuth = false
+
 	return (
 		<SafeAreaProvider style={styles.container} onLayout={onLayout}>
-			<AppNavigator />
+			{isAuth ? <AppNavigator /> : <ChatSettingsScreen />}
 			<StatusBar style='auto' />
 		</SafeAreaProvider>
 	)
