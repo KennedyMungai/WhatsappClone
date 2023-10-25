@@ -1,6 +1,6 @@
+import { createStackNavigator } from '@react-navigation/stack'
 import ChatSettingsScreen from '../screens/ChatSettingsScreen'
 import TabNavigator from './TabNavigator'
-import { createStackNavigator } from '@react-navigation/stack'
 
 const Stack = createStackNavigator()
 
