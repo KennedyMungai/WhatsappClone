@@ -2,8 +2,14 @@ import { FontAwesome, FontAwesome5 } from '@expo/vector-icons';
 import { ImageBackground, StyleSheet, TextInput, TouchableOpacity, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import colors from '../constants/colors';
+import { useState } from 'react';
 
 const ChatScreen = ({ navigation }) => {
+    const [chatText, setChatText] = useState('')
+
+    let camera = "camera"
+    let send = 'send'
+
     return (
         <ImageBackground
             source={require('../assets/images/chat_background.jpeg')}
@@ -33,6 +39,9 @@ const ChatScreen = ({ navigation }) => {
                             placeholder='Type A Message'
                             autoCorrect
                             maxLength={38}
+                            scrollEnabled
+                            value={chatText}
+                            onChangeText={(text) => setChatText(text)}
                         />
                     </View>
                     <TouchableOpacity
@@ -40,7 +49,7 @@ const ChatScreen = ({ navigation }) => {
                             () => console.log("Camera")
                         }
                     >
-                        <FontAwesome name="camera" size={24} color={colors.blue} />
+                        <FontAwesome name={`${chatText.length !== 0 ? send : camera}`} size={24} color={colors.blue} />
                     </TouchableOpacity>
                 </View>
             </SafeAreaView>
