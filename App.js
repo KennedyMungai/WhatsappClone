@@ -1,7 +1,3 @@
-import { Ionicons } from '@expo/vector-icons'
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
-import { NavigationContainer } from '@react-navigation/native'
-import { createStackNavigator } from '@react-navigation/stack'
 import * as Font from 'expo-font'
 import * as SplashScreen from 'expo-splash-screen'
 import { StatusBar } from 'expo-status-bar'
@@ -9,40 +5,9 @@ import { useCallback, useEffect, useState } from 'react'
 import { StyleSheet } from 'react-native'
 import 'react-native-gesture-handler'
 import { SafeAreaProvider } from 'react-native-safe-area-context'
-import ChatListScreen from './screens/ChatListScreen'
-import ChatSettingsScreen from './screens/ChatSettingsScreen'
+import AppNavigator from './navigation/AppNavigator'
 
 SplashScreen.preventAutoHideAsync()
-
-const Stack = createStackNavigator()
-const Tab = createBottomTabNavigator()
-
-const TabNavigator = () => {
-	return (
-		<Tab.Navigator screenOptions={{ headerShown: false }}>
-			<Tab.Screen
-				name="Chat"
-				component={ChatListScreen}
-				options={
-					{
-						tabBarLabel: 'Chat',
-						tabBarIcon: ({ color, size }) => <Ionicons name="chatbox" size={size} color={color} />
-					}
-				}
-			/>
-			<Tab.Screen
-				name="Settings"
-				component={ChatSettingsScreen}
-				options={
-					{
-						tabBarLabel: 'Settings',
-						tabBarIcon: ({ color, size }) => <Ionicons name="settings" size={size} color={color} />
-					}
-				}
-			/>
-		</Tab.Navigator>
-	)
-}
 
 export default function App() {
 	const [appIsLoaded, setAppIsLoaded] = useState(false)
@@ -82,27 +47,7 @@ export default function App() {
 
 	return (
 		<SafeAreaProvider style={styles.container} onLayout={onLayout}>
-			{/* <SafeAreaView> */}
-			<NavigationContainer>
-				<Stack.Navigator>
-					<Stack.Screen
-						name="Home"
-						component={TabNavigator}
-						options={{ headerShown: false }}
-					/>
-					<Stack.Screen
-						name="ChatSettings"
-						component={ChatSettingsScreen}
-						options={
-							{
-								headerShown: false,
-								headerTitle: 'Settings'
-							}
-						}
-					/>
-				</Stack.Navigator>
-			</NavigationContainer>
-			{/* </SafeAreaView> */}
+			<AppNavigator />
 			<StatusBar style='auto' />
 		</SafeAreaProvider>
 	)
