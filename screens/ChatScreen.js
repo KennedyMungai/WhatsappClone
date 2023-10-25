@@ -1,9 +1,14 @@
 import { View, Text, StyleSheet, Button } from 'react-native'
+import { ImageBackground } from 'react-native'
 
 const ChatScreen = ({ navigation }) => {
     return (
-        <View style={styles.chatScreenView}>
-            <Text>Chat Screen</Text>
+        <View style={styles.chatView}>
+            <ImageBackground
+                source={require('../assets/images/chat_background.jpeg')}
+                style={styles.imageBackgroundStyle}
+            >
+            </ImageBackground>
         </View>
     )
 }
@@ -11,9 +16,11 @@ const ChatScreen = ({ navigation }) => {
 export default ChatScreen
 
 const styles = StyleSheet.create({
-    chatScreenView: {
+    chatView: {
         flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center'
+        flexDirection: 'column'
+    },
+    imageBackgroundStyle: {
+        flex: 1
     }
 })
