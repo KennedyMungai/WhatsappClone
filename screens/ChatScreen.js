@@ -7,9 +7,6 @@ import { useState } from 'react';
 const ChatScreen = ({ navigation }) => {
     const [chatText, setChatText] = useState('')
 
-    let camera = "camera"
-    let send = 'send'
-
     return (
         <ImageBackground
             source={require('../assets/images/chat_background.jpeg')}
@@ -49,7 +46,7 @@ const ChatScreen = ({ navigation }) => {
                             () => console.log("Camera")
                         }
                     >
-                        <FontAwesome name={`${chatText.length !== 0 ? send : camera}`} size={24} color={colors.blue} />
+                        <FontAwesome name={`${chatText.length !== 0 ? "send" : "camera"}`} size={24} color={colors.blue} />
                     </TouchableOpacity>
                 </View>
             </SafeAreaView>
