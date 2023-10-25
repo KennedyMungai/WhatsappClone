@@ -14,7 +14,7 @@ const ChatScreen = ({ navigation }) => {
                 console.log(chatText)
             }
             else {
-                return
+                console.log("Want to take a picture?")
             }
         }, [chatText]
     )
