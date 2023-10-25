@@ -22,7 +22,7 @@ const ChatScreen = ({ navigation }) => {
                                 flex: 1,
                                 paddingHorizontal: 5,
                                 borderWidth: 1,
-                                borderColor: colors.blue,
+                                borderColor: colors.lightGray,
                                 borderRadius: 5,
                                 marginHorizontal: 10
                             }
