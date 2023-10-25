@@ -19,13 +19,12 @@ const Tab = createBottomTabNavigator()
 
 const TabNavigator = () => {
 	return (
-		<Tab.Navigator>
+		<Tab.Navigator screenOptions={{ headerShown: false }}>
 			<Tab.Screen
 				name="Chat"
 				component={ChatListScreen}
 				options={
 					{
-						headerShown: false,
 						tabBarLabel: 'Chat',
 						tabBarIcon: () => <Ionicons name="chatbox" size={24} color="black" />
 					}
@@ -36,7 +35,6 @@ const TabNavigator = () => {
 				component={ChatSettingsScreen}
 				options={
 					{
-						headerShown: false,
 						tabBarLabel: 'Settings',
 						tabBarIcon: () => <Ionicons name="settings" size={24} color="black" />
 					}
