@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, Button } from 'react-native'
+import { View, TextInput, StyleSheet, Button } from 'react-native'
 import { ImageBackground } from 'react-native'
 
 const ChatScreen = ({ navigation }) => {
@@ -9,6 +9,11 @@ const ChatScreen = ({ navigation }) => {
                 style={styles.imageBackgroundStyle}
             >
             </ImageBackground>
+            <View style={styles.inputContainer}>
+                <Button title='Image' />
+                <TextInput />
+                <Button title='Camera' />
+            </View>
         </View>
     )
 }
@@ -22,5 +27,11 @@ const styles = StyleSheet.create({
     },
     imageBackgroundStyle: {
         flex: 1
+    },
+    inputContainer: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        paddingVertical: 5,
+        paddingHorizontal: 10
     }
 })
