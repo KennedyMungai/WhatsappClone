@@ -26,7 +26,7 @@ const TabNavigator = () => {
 				options={
 					{
 						tabBarLabel: 'Chat',
-						tabBarIcon: () => <Ionicons name="chatbox" size={24} color="black" />
+						tabBarIcon: ({ color, size }) => <Ionicons name="chatbox" size={size} color={color} />
 					}
 				}
 			/>
@@ -36,7 +36,7 @@ const TabNavigator = () => {
 				options={
 					{
 						tabBarLabel: 'Settings',
-						tabBarIcon: () => <Ionicons name="settings" size={24} color="black" />
+						tabBarIcon: ({ color, size }) => <Ionicons name="settings" size={size} color={color} />
 					}
 				}
 			/>
