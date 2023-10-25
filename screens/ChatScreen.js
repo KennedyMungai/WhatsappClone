@@ -1,6 +1,7 @@
 import { FontAwesome, FontAwesome5 } from '@expo/vector-icons';
 import { ImageBackground, StyleSheet, TextInput, TouchableOpacity, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import colors from '../constants/colors';
 
 const ChatScreen = ({ navigation }) => {
     return (
@@ -12,11 +13,11 @@ const ChatScreen = ({ navigation }) => {
                 <View style={styles.chatAreaView}></View>
                 <View style={styles.inputContainer}>
                     <TouchableOpacity onPress={() => console.log("Something in the way")}>
-                        <FontAwesome5 name="image" size={24} color="#2274A5" />
+                        <FontAwesome5 name="image" size={24} color={colors.blue} />
                     </TouchableOpacity>
                     <TextInput />
                     <TouchableOpacity onPress={() => console.log("Something in the way")}>
-                        <FontAwesome name="camera" size={24} color="#2274A5" />
+                        <FontAwesome name="camera" size={24} color={colors.blue} />
                     </TouchableOpacity>
                 </View>
             </SafeAreaView>
