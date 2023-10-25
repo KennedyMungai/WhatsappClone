@@ -31,6 +31,8 @@ const ChatScreen = ({ navigation }) => {
                         <TextInput
                             style={styles.textBoxStyling}
                             placeholder='Type A Message'
+                            autoCorrect
+                            maxLength={38}
                         />
                     </View>
                     <TouchableOpacity
