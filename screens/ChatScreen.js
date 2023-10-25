@@ -15,13 +15,29 @@ const ChatScreen = ({ navigation }) => {
                     <TouchableOpacity onPress={() => console.log("Images")}>
                         <FontAwesome5 name="image" size={24} color={colors.blue} />
                     </TouchableOpacity>
-                    <View style={{ justifyContent: 'flex-start', flex: 1, paddingHorizontal: 10 }}>
+                    <View
+                        style={
+                            {
+                                justifyContent: 'flex-start',
+                                flex: 1,
+                                paddingHorizontal: 5,
+                                borderWidth: 1,
+                                borderColor: colors.blue,
+                                borderRadius: 5,
+                                marginHorizontal: 10
+                            }
+                        }
+                    >
                         <TextInput
                             style={styles.textBoxStyling}
                             placeholder='Type A Message'
                         />
                     </View>
-                    <TouchableOpacity onPress={() => console.log("Camera")}>
+                    <TouchableOpacity
+                        onPress={
+                            () => console.log("Camera")
+                        }
+                    >
                         <FontAwesome name="camera" size={24} color={colors.blue} />
                     </TouchableOpacity>
                 </View>
@@ -56,8 +72,6 @@ const styles = StyleSheet.create({
         flex: 1
     },
     textBoxStyling: {
-        borderWidth: 1,
-        borderRadius: 10,
         padding: 5,
         borderColor: colors.blue
     }
