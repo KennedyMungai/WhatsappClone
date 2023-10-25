@@ -45,6 +45,7 @@ const styles = StyleSheet.create({
     inputContainer: {
         flexDirection: 'row',
         justifyContent: 'space-between',
+        alignItems: 'center',
         paddingVertical: 10,
         paddingHorizontal: 20,
         margin: 10,
@@ -55,6 +56,9 @@ const styles = StyleSheet.create({
         flex: 1
     },
     textBoxStyling: {
-
+        borderWidth: 1,
+        borderRadius: 10,
+        padding: 5,
+        borderColor: colors.blue
     }
 })
