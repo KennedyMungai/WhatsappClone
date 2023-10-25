@@ -12,8 +12,6 @@ export default Input
 
 const styles = StyleSheet.create({
     inputMainViewComponent: {
-        paddingHorizontal: 20,
-        flex: 1,
-        backgroundColor: '#fff'
+        width: '100%'
     }
 })
