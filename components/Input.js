@@ -38,7 +38,8 @@ const styles = StyleSheet.create({
         paddingHorizontal: 20,
         borderRadius: 5,
         fontSize: 16,
-        fontFamily: 'regular'
+        fontFamily: 'regular',
+        letterSpacing: 1
     },
     inputScreenLabelStyles: {
         fontSize: 24,
