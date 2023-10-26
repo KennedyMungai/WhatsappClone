@@ -1,7 +1,21 @@
-import { StyleSheet, Text, TextInput, View } from 'react-native';
+import {
+    StyleSheet,
+    Text,
+    TextInput,
+    View
+} from 'react-native';
 import colors from '../constants/colors';
 
-const Input = ({ style, label, IconPack, iconName, iconSize, errorText, placeholder }) => {
+const Input = (
+    {
+        style,
+        label,
+        IconPack,
+        iconName,
+        iconSize,
+        errorText,
+        placeholder
+    }) => {
     return (
         <View style={[styles.inputMainViewComponent, style]}>
             <Text style={styles.inputScreenLabelStyles} >{label}</Text>
