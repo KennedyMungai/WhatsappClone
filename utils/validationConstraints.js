@@ -1,5 +1,7 @@
+import { validate } from 'validate.js'
+
 export const validateString = (id, value) => {
-    if (inputId === 'first-name' || inputId === 'last-name') {
+    if (id === 'first-name' || id === 'last-name') {
         const constraints = {
             presence: {
                 allowEmpty: false,
@@ -15,6 +17,6 @@ export const validateString = (id, value) => {
             }
         }
 
-        console.log(validate({ [inputId]: inputValue }, { [inputId]: constraints }))
+        console.log(validate({ [id]: value }, { [id]: constraints }))
     }
 }
