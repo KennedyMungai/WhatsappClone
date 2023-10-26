@@ -6,7 +6,12 @@ import { FontAwesome5 } from '@expo/vector-icons'
 const AuthScreen = () => {
     return (
         <SafeAreaView style={styles.chatScreenView}>
-            <Input label={"Something in the way"} IconPack={FontAwesome5} iconName={"user"} iconSize={24} />
+            <Input
+                label={"Something in the way"}
+                IconPack={FontAwesome5}
+                iconName={"user"}
+                iconSize={24}
+            />
         </SafeAreaView>
     )
 }
