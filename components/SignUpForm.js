@@ -8,14 +8,15 @@ const SignUpForm = () => {
     }
 
     return (
-        <><Input
-            label={"FirstName"}
-            IconPack={FontAwesome5}
-            iconName={"user"}
-            iconSize={24}
-            placeholder={'First Name'}
-            onInputChanged={inputChangedHandler}
-        />
+        <>
+            <Input
+                label={"FirstName"}
+                IconPack={FontAwesome5}
+                iconName={"user"}
+                iconSize={24}
+                placeholder={'First Name'}
+                onInputChanged={inputChangedHandler}
+            />
             <Input
                 label={"LastName"}
                 IconPack={FontAwesome5}
@@ -41,8 +42,8 @@ const SignUpForm = () => {
                 onInputChanged={inputChangedHandler}
             />
 
-            <SubmitButton buttonTitle={'Sign Up'} onPress={() => console.log('Button Pressed')} /></>
-
+            <SubmitButton buttonTitle={'Sign Up'} onPress={() => console.log('Button Pressed')} />
+        </>
     )
 }
 
