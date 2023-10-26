@@ -4,7 +4,13 @@ import SubmitButton from '../components/SubmitButton'
 
 const SignUpForm = () => {
     const inputChangedHandler = (inputId, inputValue) => {
-        console.log("Input ID: " + inputId + " Input Value: " + inputValue)
+        if (inputId === 'first-name' || inputId === 'last-name') {
+        }
+        else if (inputId === 'email') {
+            console.log(inputValue)
+        }
+        else if (inputId === 'password') {
+        }
     }
 
     return (
