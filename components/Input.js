@@ -5,7 +5,7 @@ import colors from '../constants/colors';
 const Input = ({ style, label }) => {
     return (
         <View style={[styles.inputMainViewComponent, style]}>
-            <Text>{label}</Text>
+            <Text style={styles.inputScreenLabelStyles} >{label}</Text>
             <View style={styles.inputMainViewInput} >
                 <FontAwesome5 name="user" size={24} color={colors.lightGray} />
                 <TextInput style={styles.textInputStyles} placeholder='UserName' />
@@ -39,5 +39,12 @@ const styles = StyleSheet.create({
         paddingHorizontal: 20,
         borderRadius: 5,
         fontSize: 16
+    },
+    inputScreenLabelStyles: {
+        fontSize: 24,
+        padding: 10,
+        margin: 10,
+        color: colors.lightGray,
+        fontWeight: 'bold'
     }
 })
