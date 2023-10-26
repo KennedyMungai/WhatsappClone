@@ -10,7 +10,7 @@ const Input = ({ style, label, IconPack, iconName, iconSize }) => {
                 <TextInput style={styles.textInputStyles} placeholder='UserName' />
             </View>
             <View style={styles.inputScreenErrorContainerStyles}>
-                <Text>Test Error Text</Text>
+                <Text style={styles.inputScreenErrorText}>Test Error Text</Text>
             </View>
         </View>
     )
@@ -54,5 +54,10 @@ const styles = StyleSheet.create({
     },
     inputScreenErrorContainerStyles: {
         marginTop: 10
+    },
+    inputScreenErrorText: {
+        fontSize: 16,
+        color: colors.errorRed,
+        fontWeight: 'bold',
     }
 })
