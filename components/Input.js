@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
         fontFamily: 'regular'
     },
     inputScreenErrorContainerStyles: {
-        marginTop: 10
+        marginTop: 5
     },
     inputScreenErrorText: {
         fontSize: 16,
