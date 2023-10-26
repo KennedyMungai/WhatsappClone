@@ -10,7 +10,7 @@ const SubmitButton = ({ disabled, buttonTitle, onPress }) => {
                     { backgroundColor: disabled ? colors.disabledBlue : colors.blue }
                 ]
             }
-            onPress={onPress}
+            onPress={disabled ? () => { } : onPress}
         >
             <Text style={styles.submitButtonText}>{buttonTitle}</Text>
         </TouchableOpacity>
