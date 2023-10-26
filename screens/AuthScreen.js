@@ -5,7 +5,7 @@ import Input from '../components/Input'
 const AuthScreen = () => {
     return (
         <SafeAreaView style={styles.chatScreenView}>
-            <Input label={"Something"} />
+            <Input label={"Something in the way"} />
         </SafeAreaView>
     )
 }
