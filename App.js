@@ -61,13 +61,4 @@ const styles = StyleSheet.create({
 		flex: 1,
 		backgroundColor: '#fff',
 	},
-	counterButtonsView: {
-		flexDirection: 'row',
-		gap: 10
-	},
-	mainPageTestText: {
-		fontSize: 20,
-		fontWeight: 'bold',
-		fontFamily: 'regular'
-	}
 })
