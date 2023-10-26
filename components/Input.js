@@ -9,6 +9,9 @@ const Input = ({ style, label, IconPack, iconName, iconSize }) => {
                 {IconPack && <IconPack name={iconName} size={iconSize ?? 24} color={colors.lightGray} />}
                 <TextInput style={styles.textInputStyles} placeholder='UserName' />
             </View>
+            <View style={styles.inputScreenErrorContainerStyles}>
+                <Text>Test Error Text</Text>
+            </View>
         </View>
     )
 }
@@ -48,5 +51,8 @@ const styles = StyleSheet.create({
         color: colors.lightGray,
         fontWeight: 'bold',
         fontFamily: 'regular'
+    },
+    inputScreenErrorContainerStyles: {
+        marginTop: 10
     }
 })
