@@ -6,13 +6,14 @@ import SubmitButton from './SubmitButton'
 
 const SignInForm = () => {
     return (
-        <><Input
-            label={"FirstName"}
-            IconPack={FontAwesome5}
-            iconName={"user"}
-            iconSize={24}
-            placeholder={'First Name'}
-        />
+        <>
+            <Input
+                label={"FirstName"}
+                IconPack={FontAwesome5}
+                iconName={"user"}
+                iconSize={24}
+                placeholder={'First Name'}
+            />
             <Input
                 label={"LastName"}
                 IconPack={FontAwesome5}
@@ -35,8 +36,8 @@ const SignInForm = () => {
                 placeholder={'Password'}
             />
 
-            <SubmitButton buttonTitle={'Sign Up'} onPress={() => console.log('Button Pressed')} /></>
-
+            <SubmitButton buttonTitle={'Sign Up'} onPress={() => console.log('Button Pressed')} />
+        </>
     )
 }
 
