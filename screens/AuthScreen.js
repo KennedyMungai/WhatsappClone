@@ -1,42 +1,15 @@
-import { StyleSheet, Text } from 'react-native'
+import { useState } from 'react'
+import { StyleSheet } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
-import Input from '../components/Input'
-import { FontAwesome5, Zocial, Entypo } from '@expo/vector-icons'
-import SubmitButton from '../components/SubmitButton'
+import SignInForm from '../components/SignInForm'
+import SignUpForm from '../components/SignUpForm'
 
 const AuthScreen = () => {
+    const [isSignUp, setIsSignUp] = useState(true)
+
     return (
         <SafeAreaView style={styles.chatScreenView}>
-            <Input
-                label={"FirstName"}
-                IconPack={FontAwesome5}
-                iconName={"user"}
-                iconSize={24}
-                placeholder={'First Name'}
-            />
-            <Input
-                label={"LastName"}
-                IconPack={FontAwesome5}
-                iconName={"user"}
-                iconSize={24}
-                placeholder={'Last Name'}
-            />
-            <Input
-                label={"Email"}
-                IconPack={Zocial}
-                iconName={"email"}
-                iconSize={24}
-                placeholder={'Email'}
-            />
-            <Input
-                label={"Password"}
-                IconPack={Entypo}
-                iconName={"lock-open"}
-                iconSize={24}
-                placeholder={'Password'}
-            />
-
-            <SubmitButton buttonTitle={'Sign Up'} onPress={() => console.log('Button Pressed')} />
+            {isSignUp ? <SignUpForm /> : <SignInForm />}
         </SafeAreaView>
     )
 }
