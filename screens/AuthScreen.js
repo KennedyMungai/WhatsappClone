@@ -7,7 +7,28 @@ const AuthScreen = () => {
     return (
         <SafeAreaView style={styles.chatScreenView}>
             <Input
-                label={"Something in the way"}
+                label={"FirstName"}
+                IconPack={FontAwesome5}
+                iconName={"user"}
+                iconSize={24}
+                errorText={"Something in the way"}
+            />
+            <Input
+                label={"LastName"}
+                IconPack={FontAwesome5}
+                iconName={"user"}
+                iconSize={24}
+                errorText={"Something in the way"}
+            />
+            <Input
+                label={"Email"}
+                IconPack={FontAwesome5}
+                iconName={"user"}
+                iconSize={24}
+                errorText={"Something in the way"}
+            />
+            <Input
+                label={"Password"}
                 IconPack={FontAwesome5}
                 iconName={"user"}
                 iconSize={24}
