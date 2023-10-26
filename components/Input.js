@@ -36,15 +36,14 @@ const styles = StyleSheet.create({
         gap: 10
     },
     textInputStyles: {
-        borderWidth: 1,
-        borderColor: colors.gray,
         flex: 1,
         paddingVertical: 5,
         paddingHorizontal: 20,
         borderRadius: 5,
         fontSize: 16,
         fontFamily: 'regular',
-        letterSpacing: 1
+        letterSpacing: 1,
+        backgroundColor: 'white'
     },
     inputScreenLabelStyles: {
         fontSize: 16,
