@@ -27,7 +27,11 @@ const Input = (
             <Text style={styles.inputScreenLabelStyles} >{label}</Text>
             <View style={styles.inputMainViewInput} >
                 {IconPack && <IconPack name={iconName} size={iconSize ?? 24} color={colors.lightGray} />}
-                <TextInput style={styles.textInputStyles} placeholder={placeholder} />
+                <TextInput
+                    style={styles.textInputStyles}
+                    placeholder={placeholder}
+                    onChangeText={onChangeText}
+                />
             </View>
             {
                 errorText && <View style={styles.inputScreenErrorContainerStyles}>
