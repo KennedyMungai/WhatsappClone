@@ -37,13 +37,15 @@ const styles = StyleSheet.create({
         paddingVertical: 5,
         paddingHorizontal: 20,
         borderRadius: 5,
-        fontSize: 16
+        fontSize: 16,
+        fontFamily: 'regular'
     },
     inputScreenLabelStyles: {
         fontSize: 24,
         padding: 10,
         margin: 10,
         color: colors.lightGray,
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        fontFamily: 'regular'
     }
 })
