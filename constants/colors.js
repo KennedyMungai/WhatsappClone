@@ -3,5 +3,6 @@ export default {
     lightGray: '#C1C1C1',
     nearlyWhite: '#f0f0fa',
     errorRed: '#8F250C',
-    white: '#fff'
+    white: '#fff',
+    disabledBlue: '#d3eaf6'
 }
