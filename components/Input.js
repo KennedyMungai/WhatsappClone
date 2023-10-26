@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
         fontSize: 16,
         padding: 10,
         // margin: 10,
-        color: colors.lightGray,
+        color: colors.white,
         fontWeight: 'bold',
         fontFamily: 'regular'
     },
