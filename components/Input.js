@@ -8,7 +8,7 @@ const Input = ({ style, label }) => {
             <Text>{label}</Text>
             <View style={styles.inputMainViewInput} >
                 <FontAwesome5 name="user" size={24} color="black" />
-                <TextInput />
+                <TextInput style={styles.textInputStyles} placeholder='UserName' />
             </View>
         </View>
     )
@@ -18,7 +18,8 @@ export default Input
 
 const styles = StyleSheet.create({
     inputMainViewComponent: {
-        width: '100%'
+        width: '100%',
+        alignItems: 'center',
     },
     inputMainViewInput: {
         width: '100%',
@@ -27,6 +28,16 @@ const styles = StyleSheet.create({
         padding: 15,
         flexDirection: 'row',
         justifyContent: 'flex-start',
-        alignItems: 'center'
+        alignItems: 'center',
+        gap: 10
+    },
+    textInputStyles: {
+        borderWidth: 1,
+        borderColor: colors.gray,
+        flex: 1,
+        paddingVertical: 5,
+        paddingHorizontal: 20,
+        borderRadius: 5,
+        fontSize: 16
     }
 })
