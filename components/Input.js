@@ -14,8 +14,14 @@ const Input = (
         iconName,
         iconSize,
         errorText,
-        placeholder
-    }) => {
+        placeholder,
+        onInputChanged
+    }
+) => {
+    const onChangeText = text => {
+        onInputChanged("SomeId", text)
+    }
+
     return (
         <View style={[styles.inputMainViewComponent, style]}>
             <Text style={styles.inputScreenLabelStyles} >{label}</Text>
