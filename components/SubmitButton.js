@@ -3,7 +3,14 @@ import colors from "../constants/colors"
 
 const SubmitButton = ({ disabled }) => {
     return (
-        <TouchableOpacity style={[styles.submitButtonTouchableOpacityStyles, { backgroundColor: disabled ? colors.disabledBlue : colors.blue }]}>
+        <TouchableOpacity
+            style={
+                [
+                    styles.submitButtonTouchableOpacityStyles,
+                    { backgroundColor: disabled ? colors.disabledBlue : colors.blue }
+                ]
+            }
+        >
             <Text style={styles.submitButtonText}>Submit</Text>
         </TouchableOpacity>
     )
