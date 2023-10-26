@@ -15,11 +15,12 @@ const Input = (
         iconSize,
         errorText,
         placeholder,
-        onInputChanged
+        onInputChanged,
+        id
     }
 ) => {
     const onChangeText = text => {
-        onInputChanged("SomeId", text)
+        onInputChanged(id, text)
     }
 
     return (
