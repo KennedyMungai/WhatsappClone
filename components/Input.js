@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
         fontSize: 16,
         fontFamily: 'regular',
         letterSpacing: 1,
-        backgroundColor: 'white'
+        backgroundColor: colors.white
     },
     inputScreenLabelStyles: {
         fontSize: 16,
