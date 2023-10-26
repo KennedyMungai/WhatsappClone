@@ -1,7 +1,7 @@
 import { StyleSheet, Text } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import Input from '../components/Input'
-import { FontAwesome5 } from '@expo/vector-icons'
+import { FontAwesome5, Zocial, Entypo } from '@expo/vector-icons'
 
 const AuthScreen = () => {
     return (
@@ -12,6 +12,7 @@ const AuthScreen = () => {
                 iconName={"user"}
                 iconSize={24}
                 errorText={"Something in the way"}
+                placeholder={'First Name'}
             />
             <Input
                 label={"LastName"}
@@ -19,20 +20,23 @@ const AuthScreen = () => {
                 iconName={"user"}
                 iconSize={24}
                 errorText={"Something in the way"}
+                placeholder={'Last Name'}
             />
             <Input
                 label={"Email"}
-                IconPack={FontAwesome5}
-                iconName={"user"}
+                IconPack={Zocial}
+                iconName={"email"}
                 iconSize={24}
                 errorText={"Something in the way"}
+                placeholder={'Email'}
             />
             <Input
                 label={"Password"}
-                IconPack={FontAwesome5}
-                iconName={"user"}
+                IconPack={Entypo}
+                iconName={"lock-open"}
                 iconSize={24}
                 errorText={"Something in the way"}
+                placeholder={'Password'}
             />
         </SafeAreaView>
     )
