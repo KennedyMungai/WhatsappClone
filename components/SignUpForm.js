@@ -3,6 +3,10 @@ import Input from '../components/Input'
 import SubmitButton from '../components/SubmitButton'
 
 const SignUpForm = () => {
+    const inputChangedHandler = (inputId, inputValue) => {
+        console.log("Input ID: " + inputId + " Input Value: " + inputValue)
+    }
+
     return (
         <><Input
             label={"FirstName"}
