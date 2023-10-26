@@ -9,9 +9,11 @@ const Input = ({ style, label, IconPack, iconName, iconSize, errorText }) => {
                 {IconPack && <IconPack name={iconName} size={iconSize ?? 24} color={colors.lightGray} />}
                 <TextInput style={styles.textInputStyles} placeholder='UserName' />
             </View>
-            <View style={styles.inputScreenErrorContainerStyles}>
-                <Text style={styles.inputScreenErrorText}>{errorText}</Text>
-            </View>
+            {
+                errorText && <View style={styles.inputScreenErrorContainerStyles}>
+                    <Text style={styles.inputScreenErrorText}>{errorText}</Text>
+                </View>
+            }
         </View>
     )
 }
