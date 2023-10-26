@@ -1,8 +1,6 @@
+import { Entypo, FontAwesome5, Zocial } from '@expo/vector-icons'
 import Input from '../components/Input'
-import { FontAwesome5, Zocial, Entypo } from '@expo/vector-icons'
 import SubmitButton from '../components/SubmitButton'
-import Input from './Input'
-import SubmitButton from './SubmitButton'
 
 const SignUpForm = () => {
     return (
