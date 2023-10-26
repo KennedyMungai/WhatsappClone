@@ -4,5 +4,6 @@ export default {
     nearlyWhite: '#f0f0fa',
     errorRed: '#8F250C',
     white: '#fff',
-    disabledBlue: '#d3eaf6'
+    disabledBlue: '#d3eaf6',
+    black: '#000'
 }
