@@ -36,7 +36,7 @@ const AuthScreen = () => {
                 placeholder={'Password'}
             />
 
-            <SubmitButton />
+            <SubmitButton buttonTitle={'Sign Up'} />
         </SafeAreaView>
     )
 }
