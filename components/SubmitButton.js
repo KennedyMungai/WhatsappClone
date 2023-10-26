@@ -1,9 +1,9 @@
 import { StyleSheet, TouchableOpacity, Text } from "react-native"
 import colors from "../constants/colors"
 
-const SubmitButton = () => {
+const SubmitButton = ({ disabled }) => {
     return (
-        <TouchableOpacity style={styles.submitButtonTouchableOpacityStyles}>
+        <TouchableOpacity style={[styles.submitButtonTouchableOpacityStyles, { backgroundColor: disabled ? colors.disabledBlue : colors.blue }]}>
             <Text style={styles.submitButtonText}>Submit</Text>
         </TouchableOpacity>
     )
