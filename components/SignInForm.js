@@ -20,7 +20,7 @@ const SignInForm = () => {
                 placeholder={'Password'}
             />
 
-            <SubmitButton buttonTitle={'Sign Up'} onPress={() => console.log('Button Pressed')} />
+            <SubmitButton buttonTitle={'Sign In'} onPress={() => console.log('Button Pressed')} />
         </>
     )
 }
