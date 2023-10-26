@@ -11,6 +11,7 @@ const AuthScreen = () => {
                 IconPack={FontAwesome5}
                 iconName={"user"}
                 iconSize={24}
+                errorText={Something in the way}
             />
         </SafeAreaView>
     )

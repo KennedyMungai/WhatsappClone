@@ -1,7 +1,7 @@
 import { StyleSheet, Text, TextInput, View } from 'react-native';
 import colors from '../constants/colors';
 
-const Input = ({ style, label, IconPack, iconName, iconSize }) => {
+const Input = ({ style, label, IconPack, iconName, iconSize, errorText }) => {
     return (
         <View style={[styles.inputMainViewComponent, style]}>
             <Text style={styles.inputScreenLabelStyles} >{label}</Text>
@@ -10,7 +10,7 @@ const Input = ({ style, label, IconPack, iconName, iconSize }) => {
                 <TextInput style={styles.textInputStyles} placeholder='UserName' />
             </View>
             <View style={styles.inputScreenErrorContainerStyles}>
-                <Text style={styles.inputScreenErrorText}>Test Error Text</Text>
+                <Text style={styles.inputScreenErrorText}>{errorText}</Text>
             </View>
         </View>
     )
