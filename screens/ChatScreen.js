@@ -55,7 +55,7 @@ const ChatScreen = ({ navigation }) => {
                         />
                     </View>
                     <TouchableOpacity onPress={sendMessageHandler}>
-                        <FontAwesome
+                        <FontAwesom
                             name={`${chatText.length !== 0 ? "send" : "camera"}`}
                             size={24}
                             color={colors.blue}

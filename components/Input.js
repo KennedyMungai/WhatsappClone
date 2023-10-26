@@ -2,12 +2,12 @@ import { FontAwesome5 } from '@expo/vector-icons';
 import { StyleSheet, Text, TextInput, View } from 'react-native';
 import colors from '../constants/colors';
 
-const Input = ({ style, label }) => {
+const Input = ({ style, label, IconPack, iconName }) => {
     return (
         <View style={[styles.inputMainViewComponent, style]}>
             <Text style={styles.inputScreenLabelStyles} >{label}</Text>
             <View style={styles.inputMainViewInput} >
-                <FontAwesome5 name="user" size={24} color={colors.lightGray} />
+                <IconPack name={iconName} size={24} color={colors.lightGray} />
                 <TextInput style={styles.textInputStyles} placeholder='UserName' />
             </View>
         </View>
