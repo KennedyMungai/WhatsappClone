@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import { StyleSheet, Text, TouchableOpacity } from 'react-native'
-import { SafeAreaView } from 'react-native-safe-area-context'
+import { ImageBackground, StyleSheet, Text, TouchableOpacity } from 'react-native'
 import SignInForm from '../components/SignInForm'
 import SignUpForm from '../components/SignUpForm'
 import colors from '../constants/colors'
@@ -9,7 +8,7 @@ const AuthScreen = () => {
     const [isSignUp, setIsSignUp] = useState(true)
 
     return (
-        <SafeAreaView style={styles.chatScreenView}>
+        <ImageBackground style={styles.chatScreenView} source={require('../assets/images/whatsapp_splashscreen.png')}>
             {isSignUp ? <SignUpForm /> : <SignInForm />}
 
             <TouchableOpacity
@@ -18,7 +17,7 @@ const AuthScreen = () => {
             >
                 <Text style={{ color: colors.white, fontSize: 16, fontWeight: 'bold' }}>{`${isSignUp ? 'Sign In?' : 'Sign Up?'}`}</Text>
             </TouchableOpacity>
-        </SafeAreaView>
+        </ImageBackground>
     )
 }
 
