@@ -11,7 +11,6 @@ const AuthScreen = () => {
                 IconPack={FontAwesome5}
                 iconName={"user"}
                 iconSize={24}
-                errorText={"Something in the way"}
                 placeholder={'First Name'}
             />
             <Input
@@ -19,7 +18,6 @@ const AuthScreen = () => {
                 IconPack={FontAwesome5}
                 iconName={"user"}
                 iconSize={24}
-                errorText={"Something in the way"}
                 placeholder={'Last Name'}
             />
             <Input
@@ -27,7 +25,6 @@ const AuthScreen = () => {
                 IconPack={Zocial}
                 iconName={"email"}
                 iconSize={24}
-                errorText={"Something in the way"}
                 placeholder={'Email'}
             />
             <Input
@@ -35,7 +32,6 @@ const AuthScreen = () => {
                 IconPack={Entypo}
                 iconName={"lock-open"}
                 iconSize={24}
-                errorText={"Something in the way"}
                 placeholder={'Password'}
             />
         </SafeAreaView>
