@@ -7,7 +7,7 @@ const Input = ({ style, label, IconPack, iconName, iconSize }) => {
         <View style={[styles.inputMainViewComponent, style]}>
             <Text style={styles.inputScreenLabelStyles} >{label}</Text>
             <View style={styles.inputMainViewInput} >
-                {IconPack && <IconPack name={iconName} size={iconSize} color={colors.lightGray} />}
+                {IconPack && <IconPack name={iconName} size={iconSize ?? 24} color={colors.lightGray} />}
                 <TextInput style={styles.textInputStyles} placeholder='UserName' />
             </View>
         </View>
