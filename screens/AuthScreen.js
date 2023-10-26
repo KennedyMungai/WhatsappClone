@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { ImageBackground, StyleSheet, Text, TouchableOpacity, ScrollView, KeyBoardAvoidingView } from 'react-native'
+import { ImageBackground, ScrollView, StyleSheet, Text, TouchableOpacity } from 'react-native'
 import SignInForm from '../components/SignInForm'
 import SignUpForm from '../components/SignUpForm'
 import colors from '../constants/colors'
