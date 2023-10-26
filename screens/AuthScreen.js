@@ -13,7 +13,7 @@ const AuthScreen = () => {
             {isSignUp ? <SignUpForm /> : <SignInForm />}
 
             <TouchableOpacity style={{ backgroundColor: colors.black, padding: 15, margin: 10, borderRadius: 8 }}>
-                <Text style={{ color: colors.white, fontSize: 16 }}>{`${isSignUp ? 'Sign In?' : 'Sign Up?'}`}</Text>
+                <Text style={{ color: colors.white, fontSize: 16, fontWeight: 'bold' }}>{`${isSignUp ? 'Sign In?' : 'Sign Up?'}`}</Text>
             </TouchableOpacity>
         </SafeAreaView>
     )
