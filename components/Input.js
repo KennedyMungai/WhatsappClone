@@ -58,6 +58,6 @@ const styles = StyleSheet.create({
     inputScreenErrorText: {
         fontSize: 16,
         color: colors.errorRed,
-        fontWeight: 'bold',
+        fontWeight: 'bold'
     }
 })
