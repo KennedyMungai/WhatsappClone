@@ -7,7 +7,7 @@ const Input = ({ style, label }) => {
         <View style={[styles.inputMainViewComponent, style]}>
             <Text>{label}</Text>
             <View style={styles.inputMainViewInput} >
-                <FontAwesome5 name="user" size={24} color="black" />
+                <FontAwesome5 name="user" size={24} color={colors.lightGray} />
                 <TextInput style={styles.textInputStyles} placeholder='UserName' />
             </View>
         </View>
