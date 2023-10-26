@@ -1,4 +1,3 @@
-import { FontAwesome5 } from '@expo/vector-icons';
 import { StyleSheet, Text, TextInput, View } from 'react-native';
 import colors from '../constants/colors';
 
