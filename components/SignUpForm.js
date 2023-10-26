@@ -16,6 +16,7 @@ const SignUpForm = () => {
                 iconSize={24}
                 placeholder={'First Name'}
                 onInputChanged={inputChangedHandler}
+                id='first-name'
             />
             <Input
                 label={"LastName"}
@@ -24,6 +25,7 @@ const SignUpForm = () => {
                 iconSize={24}
                 placeholder={'Last Name'}
                 onInputChanged={inputChangedHandler}
+                id='last-name'
             />
             <Input
                 label={"Email"}
@@ -32,6 +34,7 @@ const SignUpForm = () => {
                 iconSize={24}
                 placeholder={'Email'}
                 onInputChanged={inputChangedHandler}
+                id='email'
             />
             <Input
                 label={"Password"}
@@ -40,6 +43,7 @@ const SignUpForm = () => {
                 iconSize={24}
                 placeholder={'Password'}
                 onInputChanged={inputChangedHandler}
+                id='password'
             />
 
             <SubmitButton buttonTitle={'Sign Up'} onPress={() => console.log('Button Pressed')} />
