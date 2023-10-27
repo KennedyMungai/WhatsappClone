@@ -28,6 +28,7 @@ const SignUpForm = () => {
                 id='first-name'
                 autoCapitalize={true}
                 secureTextEntry={false}
+                keyboardType={'default'}
             />
             <Input
                 label={"LastName"}
@@ -39,6 +40,7 @@ const SignUpForm = () => {
                 id='last-name'
                 autoCapitalize={true}
                 secureTextEntry={false}
+                keyboardType={'default'}
             />
             <Input
                 label={"Email"}
@@ -50,6 +52,7 @@ const SignUpForm = () => {
                 id='email'
                 autoCapitalize={true}
                 secureTextEntry={false}
+                keyboardType={'email-address'}
             />
             <Input
                 label={"Password"}
@@ -61,6 +64,7 @@ const SignUpForm = () => {
                 id='password'
                 autoCapitalize={false}
                 secureTextEntry={true}
+                keyboardType={'default'}
             />
 
             <SubmitButton buttonTitle={'Sign Up'} onPress={() => console.log('Button Pressed')} />

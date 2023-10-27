@@ -18,7 +18,8 @@ const Input = (
         onInputChanged,
         id,
         autoCapitalize,
-        secureTextEntry
+        secureTextEntry,
+        keyboardType
     }
 ) => {
     const onChangeText = text => {
@@ -36,6 +37,7 @@ const Input = (
                     onChangeText={onChangeText}
                     autoCapitalize={autoCapitalize}
                     secureTextEntry={secureTextEntry}
+                    keyboardType={keyboardType}
                 />
             </View>
             {
