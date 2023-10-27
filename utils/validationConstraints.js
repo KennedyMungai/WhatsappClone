@@ -9,7 +9,7 @@ export const validateString = (id, value) => {
             }
         }
 
-        if (inputValue !== '') {
+        if (value !== '') {
             constraints.format = {
                 pattern: '[a-z]+',
                 flag: 'i',
