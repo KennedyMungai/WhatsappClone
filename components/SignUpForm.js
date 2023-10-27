@@ -1,7 +1,7 @@
 import { Entypo, FontAwesome5, Zocial } from '@expo/vector-icons'
 import Input from '../components/Input'
 import SubmitButton from '../components/SubmitButton'
-import { validateString } from '../utils/validationConstraints'
+import { validateEmail, validateString } from '../utils/validationConstraints'
 
 const SignUpForm = () => {
     const inputChangedHandler = (inputId, inputValue) => {
@@ -9,7 +9,7 @@ const SignUpForm = () => {
             console.log(validateString(inputId, inputValue))
         }
         else if (inputId === 'email') {
-            console.log(inputValue)
+            console.log(validateEmail(inputId, inputValue))
         }
         else if (inputId === 'password') {
         }
