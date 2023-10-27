@@ -9,7 +9,10 @@ const reducer = (state, action) => {
 
     state.formIsValid = validationResult === undefined
 
-    return state
+    return {
+        ...state,
+        formIsValid: validationResult === undefined
+    }
 }
 
 const initialState = {
