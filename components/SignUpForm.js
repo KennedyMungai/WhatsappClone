@@ -26,7 +26,7 @@ const SignUpForm = () => {
                 placeholder={'First Name'}
                 onInputChanged={inputChangedHandler}
                 id='first-name'
-                autoCapitalize={true}
+                autoCapitalize={'words'}
                 secureTextEntry={false}
                 keyboardType={'default'}
             />
@@ -38,7 +38,7 @@ const SignUpForm = () => {
                 placeholder={'Last Name'}
                 onInputChanged={inputChangedHandler}
                 id='last-name'
-                autoCapitalize={true}
+                autoCapitalize={'words'}
                 secureTextEntry={false}
                 keyboardType={'default'}
             />
@@ -50,7 +50,7 @@ const SignUpForm = () => {
                 placeholder={'Email'}
                 onInputChanged={inputChangedHandler}
                 id='email'
-                autoCapitalize={true}
+                autoCapitalize={'none'}
                 secureTextEntry={false}
                 keyboardType={'email-address'}
             />
@@ -62,7 +62,7 @@ const SignUpForm = () => {
                 placeholder={'Password'}
                 onInputChanged={inputChangedHandler}
                 id='password'
-                autoCapitalize={false}
+                autoCapitalize={'none'}
                 secureTextEntry={true}
                 keyboardType={'default'}
             />
