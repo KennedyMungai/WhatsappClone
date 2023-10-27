@@ -8,7 +8,15 @@ const reducer = (state, action) => {
 
 }
 
-const initialState = {}
+const initialState = {
+    inputValidities: {
+        firstName: false,
+        lastName: false,
+        email: false,
+        password: false
+    },
+    formIsValid: false
+}
 
 const SignUpForm = () => {
     const [formState, dispatchFormState] = useReducer(reducer, initialState)
