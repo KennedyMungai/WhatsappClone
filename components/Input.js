@@ -32,6 +32,7 @@ const Input = (
                     style={styles.textInputStyles}
                     placeholder={placeholder}
                     onChangeText={onChangeText}
+                    {...props}
                 />
             </View>
             {
