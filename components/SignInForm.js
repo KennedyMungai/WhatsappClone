@@ -25,7 +25,7 @@ const SignInForm = () => {
                 placeholder={'Email'}
                 autoCapitalize={'none'}
                 secureTextEntry={false}
-                keyboardType={'email'}
+                keyboardType={'email-address'}
                 onInputChanged={inputChangedHandler}
             />
             <Input
