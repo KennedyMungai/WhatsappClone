@@ -27,6 +27,7 @@ const SignInForm = () => {
                 secureTextEntry={false}
                 keyboardType={'email-address'}
                 onInputChanged={inputChangedHandler}
+                id='email'
             />
             <Input
                 label={"Password"}
@@ -38,6 +39,7 @@ const SignInForm = () => {
                 secureTextEntry={true}
                 keyboardType={'default'}
                 onInputChanged={inputChangedHandler}
+                id='password'
             />
 
             <SubmitButton buttonTitle={'Sign In'} onPress={() => console.log('Button Pressed')} />
