@@ -23,7 +23,7 @@ const reducer = (state, action) => {
 
     return {
         inputValidities: updatedValidities,
-        formIsValid: validationResult === undefined
+        formIsValid: updatedFormIsValid
     }
 }
 
