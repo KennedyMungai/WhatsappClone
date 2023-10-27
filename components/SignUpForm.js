@@ -6,7 +6,8 @@ import { validateInput } from '../utils/actions/formActions'
 
 const reducer = (state, action) => {
     const { validationResult } = action
-    console.log(validationResult)
+
+    state.formIsValid = validationResult === undefined
 
     return state
 }
