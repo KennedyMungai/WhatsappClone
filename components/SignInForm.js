@@ -11,6 +11,9 @@ const SignInForm = () => {
                 iconName={"email"}
                 iconSize={24}
                 placeholder={'Email'}
+                autoCapitalize={'none'}
+                secureTextEntry={false}
+                keyboardType={'email'}
             />
             <Input
                 label={"Password"}
@@ -18,6 +21,9 @@ const SignInForm = () => {
                 iconName={"lock-open"}
                 iconSize={24}
                 placeholder={'Password'}
+                autoCapitalize={'none'}
+                secureTextEntry={true}
+                keyboardType={'default'}
             />
 
             <SubmitButton buttonTitle={'Sign In'} onPress={() => console.log('Button Pressed')} />
