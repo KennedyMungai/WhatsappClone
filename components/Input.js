@@ -16,7 +16,9 @@ const Input = (
         errorText,
         placeholder,
         onInputChanged,
-        id
+        id,
+        autoCapitalize,
+        secureTextEntry
     }
 ) => {
     const onChangeText = text => {
@@ -32,6 +34,8 @@ const Input = (
                     style={styles.textInputStyles}
                     placeholder={placeholder}
                     onChangeText={onChangeText}
+                    autoCapitalize={autoCapitalize}
+                    secureTextEntry={secureTextEntry}
                 />
             </View>
             {

@@ -26,6 +26,8 @@ const SignUpForm = () => {
                 placeholder={'First Name'}
                 onInputChanged={inputChangedHandler}
                 id='first-name'
+                autoCapitalize={true}
+                secureTextEntry={false}
             />
             <Input
                 label={"LastName"}
@@ -35,6 +37,8 @@ const SignUpForm = () => {
                 placeholder={'Last Name'}
                 onInputChanged={inputChangedHandler}
                 id='last-name'
+                autoCapitalize={true}
+                secureTextEntry={false}
             />
             <Input
                 label={"Email"}
@@ -44,6 +48,8 @@ const SignUpForm = () => {
                 placeholder={'Email'}
                 onInputChanged={inputChangedHandler}
                 id='email'
+                autoCapitalize={true}
+                secureTextEntry={false}
             />
             <Input
                 label={"Password"}
@@ -53,6 +59,8 @@ const SignUpForm = () => {
                 placeholder={'Password'}
                 onInputChanged={inputChangedHandler}
                 id='password'
+                autoCapitalize={false}
+                secureTextEntry={true}
             />
 
             <SubmitButton buttonTitle={'Sign Up'} onPress={() => console.log('Button Pressed')} />
