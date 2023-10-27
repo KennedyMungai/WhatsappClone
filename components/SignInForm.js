@@ -3,6 +3,18 @@ import Input from '../components/Input'
 import SubmitButton from '../components/SubmitButton'
 
 const SignInForm = () => {
+    const inputChangedHandler = (inputId, inputValue) => {
+        if (inputId === 'first-name' || inputId === 'last-name') {
+            console.log(validateString(inputId, inputValue))
+        }
+        else if (inputId === 'email') {
+            console.log(validateEmail(inputId, inputValue))
+        }
+        else if (inputId === 'password') {
+            console.log(validatePassword(inputId, inputValue))
+        }
+    }
+
     return (
         <>
             <Input
@@ -14,6 +26,7 @@ const SignInForm = () => {
                 autoCapitalize={'none'}
                 secureTextEntry={false}
                 keyboardType={'email'}
+                onInputChanged={inputChangedHandler}
             />
             <Input
                 label={"Password"}
@@ -24,6 +37,7 @@ const SignInForm = () => {
                 autoCapitalize={'none'}
                 secureTextEntry={true}
                 keyboardType={'default'}
+                onInputChanged={inputChangedHandler}
             />
 
             <SubmitButton buttonTitle={'Sign In'} onPress={() => console.log('Button Pressed')} />
