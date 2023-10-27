@@ -53,6 +53,7 @@ const SignUpForm = () => {
                 placeholder={'Password'}
                 onInputChanged={inputChangedHandler}
                 id='password'
+                autoCapitalize='none'
             />
 
             <SubmitButton buttonTitle={'Sign Up'} onPress={() => console.log('Button Pressed')} />
