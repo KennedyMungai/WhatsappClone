@@ -1,13 +1,11 @@
 import { Entypo, Zocial } from '@expo/vector-icons'
 import Input from '../components/Input'
 import SubmitButton from '../components/SubmitButton'
+import { validateEmail, validatePassword } from '../utils/validationConstraints'
 
 const SignInForm = () => {
     const inputChangedHandler = (inputId, inputValue) => {
-        if (inputId === 'first-name' || inputId === 'last-name') {
-            console.log(validateString(inputId, inputValue))
-        }
-        else if (inputId === 'email') {
+        if (inputId === 'email') {
             console.log(validateEmail(inputId, inputValue))
         }
         else if (inputId === 'password') {
