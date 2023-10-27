@@ -17,6 +17,8 @@ export const validateString = (id, value) => {
             }
         }
 
-        return (validate({ [id]: value }, { [id]: constraints }))
+        const validationResult = validate({ [id]: value }, { [id]: constraints })
+
+        return validationResult && validationResult[id]
     }
 }
