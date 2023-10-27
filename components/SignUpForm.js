@@ -5,9 +5,21 @@ import SubmitButton from '../components/SubmitButton'
 import { validateInput } from '../utils/actions/formActions'
 
 const reducer = (state, action) => {
-    const { validationResult } = action
+    const { validationResult, inputId } = action
 
-    state.formIsValid = validationResult === undefined
+    const updatedValidities = {
+        ...state.inputValidities,
+        [inputId]: validationResult
+    }
+
+    let updatedFormIsValid = true
+
+    for (const key in updatedValidities) {
+        if (updatedValidities[key] !== undefined) {
+            updatedFormIsValid = false
+            break
+        }
+    }
 
     return {
         ...state,
@@ -31,7 +43,7 @@ const SignUpForm = () => {
     const inputChangedHandler = (inputId, inputValue) => {
         const result = validateInput(inputId, inputValue)
 
-        dispatchFormState({ validationResult: result })
+        dispatchFormState({ inputId, validationResult: result })
     }
 
     return (
