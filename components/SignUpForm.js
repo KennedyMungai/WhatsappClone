@@ -88,7 +88,7 @@ const SignUpForm = () => {
             <SubmitButton
                 buttonTitle={'Sign Up'}
                 onPress={() => console.log('Button Pressed')}
-                disabled={formState.formIsValid}
+                disabled={!formState.formIsValid}
             />
         </>
     )
