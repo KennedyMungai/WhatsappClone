@@ -1,9 +1,18 @@
 import { Entypo, FontAwesome5, Zocial } from '@expo/vector-icons'
+import { useReducer } from 'react'
 import Input from '../components/Input'
 import SubmitButton from '../components/SubmitButton'
 import { validateInput } from '../utils/actions/formActions'
 
+const reducer = (state, action) => {
+
+}
+
+const initialState = {}
+
 const SignUpForm = () => {
+    const [formState, dispatchFormState] = useReducer(reducer, initialState)
+
     const inputChangedHandler = (inputId, inputValue) => {
         console.log(validateInput(inputId, inputValue))
     }
