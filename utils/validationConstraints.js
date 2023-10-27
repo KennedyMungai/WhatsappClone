@@ -30,11 +30,7 @@ export const validateEmail = (id, value) => {
     }
 
     if (value !== '') {
-        constraints.format = {
-            pattern: '[a-z]+',
-            flag: 'i',
-            message: 'can only contain letters'
-        }
+        constraints.email = true
     }
 
     const validationResult = validate({ [id]: value }, { [id]: constraints })
